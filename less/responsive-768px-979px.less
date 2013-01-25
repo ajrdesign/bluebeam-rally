@@ -1,0 +1,62 @@
+//
+// Responsive: Tablet to desktop
+// --------------------------------------------------
+
+
+@media (min-width: 768px) and (max-width: 979px) {
+
+	p {
+		font-size: 16px;
+			}
+
+  // Fixed grid
+  #grid > .core(@gridColumnWidth768, @gridGutterWidth768);
+
+  // Fluid grid
+  #grid > .fluid(@fluidGridColumnWidth768, @fluidGridGutterWidth768);
+
+  // Input grid
+  #grid > .input(@gridColumnWidth768, @gridGutterWidth768);
+
+  // No need to reset .thumbnails here since it's the same @gridGutterWidth
+
+  .docs-sidebar {
+	width: (@gridColumnWidth * 3);
+}
+
+	// Gallery
+	.gallery li {
+		width: 30%; 
+	}
+	.gallery li:nth-child(3n+1) {
+		clear: left;
+	}
+	.gallery li:nth-child(2n+1) {
+		clear: none;
+	}
+
+.rally-car-background {
+background: url(../img/slideimage-1.jpg) no-repeat top;
+  background-size: 100% auto;
+  height: 180px
+}
+
+.headline-tag {
+	width: 340px;
+}
+
+.headline-tag:after {
+	border-left-color: #88b7d5;
+	border-top: 74px solid transparent;
+	border-bottom: 0;
+	border-left: 16px solid rgba(0,131,226,.8);
+	top: 0;
+}
+
+	// Article
+	article {
+	  width: 75%;
+	  margin: 0 auto;
+	}
+
+}
